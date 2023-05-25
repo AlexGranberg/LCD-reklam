@@ -1,5 +1,5 @@
-#ifndef __CALCULATOR_H
-#define __CALCULATOR_H
+#ifndef __STRUCT_H
+#define __STRUCT_H
 
 typedef struct {
 
