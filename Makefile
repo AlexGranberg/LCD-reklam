@@ -21,7 +21,7 @@ else
 	OUTPUTDIR=bin/release
 endif
 
-OBJS =  $(addprefix $(OUTPUTDIR)/,$(SOURCES:.c=.o))
+OBJS = $(addprefix $(OUTPUTDIR)/,$(SOURCES:.c=.o))
 
 all: $(OUTPUTDIR)  $(OUT) 
 
