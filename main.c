@@ -21,9 +21,20 @@ int main(void){
     lcd_init();
     lcd_enable_blinking();
     lcd_enable_cursor();
-
+    //randomizeNumber(int randomMax);
+    //defineCompany(); 
 
     while(1){
+    //int lastCompany 
+    //int randomNum = randomizeNumber();
+    //struct randomizedCompany = defineCompany(randomNum); 
+
+    // while(randomizedCompany != lastCompany){
+    //    if company:
+    //      num = randomizeNumber(numOfCommercial);
+    //      print(commercial); 
+    // 
+    //}
     }
 
     return 0;
