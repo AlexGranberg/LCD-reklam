@@ -3,6 +3,7 @@
 #include <avr/interrupt.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <time.h>
 #include "uart.h"
 #include "millis.h"
 #include "lcd.h"
@@ -13,6 +14,9 @@
 #define BIT_FLIP(a,b) ((a) ^= (1ULL<<(b)))
 #define BIT_CHECK(a,b) (!!((a) & (1ULL<<(b)))) 
 
+int randomizedNumber(int randomMax){
+    return (rand() % randomMax)  + 1;
+    }
 
 int main(void){
     init_serial();
@@ -21,12 +25,12 @@ int main(void){
     lcd_init();
     lcd_enable_blinking();
     lcd_enable_cursor();
-    //randomizeNumber(int randomMax);
+    
     //defineCompany(); 
 
     while(1){
     //int lastCompany 
-    //int randomNum = randomizeNumber();
+    int randomNum = randomizedNumber(9000);
     //struct randomizedCompany = defineCompany(randomNum); 
 
     // while(randomizedCompany != lastCompany){

@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\soder\\OneDrive\\Skrivbord\\YA\\Embedded\\ReklamLCD\\LCD-reklam",
+            "binaryPath": "c:\\Users\\soder\\OneDrive\\Skrivbord\\YA\\Embedded\\ReklamLCD\\LCD-reklam\\avrdemo.elf",
+            "binaryArgs": []
+        }
+    ]
+}
