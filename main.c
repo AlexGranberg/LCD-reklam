@@ -25,19 +25,16 @@ int randomCompany(int valueIn) {
     if(valueIn < 10501) return 4;
 }
 
-int main(void){
-    init_serial();
-    millis_init();
-    sei();
+int main(){
     lcd_init();
-    lcd_enable_blinking();
-    lcd_enable_cursor();
+    
+    lcd_puts("Hej!!");
+    _delay_ms(5000);
     
     //defineCompany(); 
 
     while(1){
-    lcd_puts("Hej!!");
-    _delay_ms(10000);
+    
     //int lastCompany 
     int randomNum = randomizedNumber(5000);
     int companyValue = randomCompany(randomNum);
@@ -60,7 +57,7 @@ int main(void){
         else{
             lcd_printf("Köp bil hos Harry");
         }
-        _delay_ms(20000);
+        _delay_ms(5000);
         lcd_clear();
         break;
     
